@@ -3,7 +3,7 @@
     <div class="col-md-6">
       <div class="row d-flex justify-content-center">
         <div class="col-md-6 caixaCadastrar">
-          <h1 class="text-center display-4">Atualiza Cadastro</h1>
+          <h1 class="text-center display-4">Atualização Cadastral</h1>
           <div class="form-group">
             <label for="nome">Nome:</label>
             <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome"
@@ -31,18 +31,17 @@
           </div>
           <div class="form-group">
             <label for="foto">CPF:</label>
-            <input [(ngModel)]='usuario.cpf' class="form-control" type="number" name="cpf" id="cpf"
+            <input [(ngModel)]='usuario.cpf' class="form-control" type="text" name="cpf" id="cpf"
               placeholder="999.999.999-99" />
           </div>
 
           <div class="form-group">
             <label for="foto">Telefone:</label>
-            <input [(ngModel)]='usuario.telefone' class="form-control" type="number" name="telefone" id="telefone"
+            <input [(ngModel)]='usuario.telefone' class="form-control" type="text" name="telefone" id="telefone"
               placeholder="(11)99999-9999" />
           </div>
          
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-voltar mr-2" routerLink="https://banco.bradesco/html/classic/index.shtm">Voltar</button>
             <button type="submit" class="btn btn-cadastrar ml-2" (click)='cadastrar()'>Atualizar</button>
           </div>
         </div>
