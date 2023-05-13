@@ -1,0 +1,52 @@
+<div class="container-fluid" id="img-bg">
+  <div class="row d-flex align-items-center justify-content-center h-100">
+    <div class="col-md-6">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 caixaCadastrar">
+          <h1 class="text-center display-4">Cadastro</h1>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome"
+              placeholder="Seu nome" />
+          </div>
+          <div class="form-group">
+            <label for="foto">Agencia:</label>
+            <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="agencia" id="agencia"
+              placeholder="Exemplo: https://i.imgur.com/qjNBkcK.jpg" />
+          </div>
+          <div class="form-group">
+            <label for="foto">Conta:</label>
+            <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="conta" id="conta"
+              placeholder="Exemplo: https://i.imgur.com/qjNBkcK.jpg" />
+          </div>
+          <div class="form-group">
+            <label for="">Senha (4 dígitos):</label>
+            <input (input)='confirmarSenha($event)' name="senha" type="password" class="form-control"
+              placeholder="A senha precisa ter no mínimo 8 caracteres.">
+          </div>
+          <div class="form-group">
+            <label for="foto">Confirmar Senha:</label>
+            <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="senha_digitos" id="senha_digitos"
+              placeholder="Exemplo: https://i.imgur.com/qjNBkcK.jpg" />
+          </div>
+          <div class="form-group">
+            <label for="foto">CPF:</label>
+            <input [(ngModel)]='usuario.foto' class="form-control" type="number" name="cpf" id="cpf"
+              placeholder="Exemplo: https://i.imgur.com/qjNBkcK.jpg" />
+          </div>
+
+          <div class="form-group">
+            <label for="foto">Telefone:</label>
+            <input [(ngModel)]='usuario.foto' class="form-control" type="number" name="telefone" id="telefone"
+              placeholder="Exemplo: https://i.imgur.com/qjNBkcK.jpg" />
+          </div>
+         
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-voltar mr-2" routerLink="/entrar">Voltar</button>
+            <button type="submit" class="btn btn-cadastrar ml-2" (click)='cadastrar()'>Cadastrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
