@@ -24,11 +24,7 @@ export class CadastrarComponent implements OnInit {
     ngOnInit() {
       window.scroll(0, 0);
     }
-    
-    confirmarSenha(event: any) {
-      this.confirmSenha = event.target.value;
-    }
-    
+   
     tipoUser(event: any) {
       this.agencia = event.target.value;
     }
@@ -53,7 +49,7 @@ export class CadastrarComponent implements OnInit {
   cadastrar(){
     this.usuario.agencia = this.agencia;
 
-    if(this.usuario.senha == this.confirmSenha) {
+    if(this.usuario.senha) {
       this.auth.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp;
         alert('Conta Atualizada com sucesso')
