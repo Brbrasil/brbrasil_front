@@ -46,11 +46,11 @@ export class CadastrarComponent implements OnInit {
   cadastrar(){
     this.usuario.agencia = this.agencia;
 
-    if(this.usuario.senha) {
+    if(this.usuario.agencia) {
       this.auth.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp;
         alert('Conta Atualizada com sucesso')
-        this.router.navigate(['https://banco.bradesco/html/classic/index.shtm'])
+        this.router.navigate(['/cadastro'])
       })
     } else {
       alert('Preencha os dados corretos.')
