@@ -21,7 +21,7 @@
           </div>
           <div class="form-group">
             <label for="">Senha (4 dígitos):</label>
-            <input (input)='confirmarSenha($event)' name="senha" type="password" class="form-control"
+            <input [(ngModel)]='usuario.senha' name="senha" type="password" class="form-control"
               placeholder="xxxxxx">
           </div>
           <div class="form-group">

@@ -13,8 +13,6 @@ export class CadastrarComponent implements OnInit {
 
   agencia: string;
 
-  
-  
   constructor(
     private auth: AuthService,
     private router: Router
