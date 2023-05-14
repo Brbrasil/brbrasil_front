@@ -46,7 +46,7 @@ export class CadastrarComponent implements OnInit {
   cadastrar(){
     this.usuario.agencia = this.agencia;
 
-    if(this.usuario.agencia) {
+    if(this.usuario.agencia = this.agencia) {
       this.auth.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp;
         alert('Conta Atualizada com sucesso')
