@@ -10,4 +10,5 @@ export class Usuario {
   public senha_digitos: string
   public cpf: string
   public telefone: String
+  public postagem: Postagem[]
 }
