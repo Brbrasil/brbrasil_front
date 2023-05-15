@@ -9,7 +9,7 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./cadastrar.component.css'],
 })
 export class CadastrarComponent implements OnInit {
-  agencia: Usuario = new Usuario();
+  usuario: Usuario = new Usuario();
 
   tipo_conta: string;
 
@@ -44,11 +44,11 @@ export class CadastrarComponent implements OnInit {
   // }
 
   cadastrar(){
-    this.agencia.tipo_conta = this.tipo_conta;
+    this.usuario.tipo_conta = this.tipo_conta;
 
-    if(this.agencia.tipo_conta == this.tipo_conta) {
-      this.auth.cadastrar(this.agencia).subscribe((resp: Usuario) => {
-        this.agencia = resp;
+    if(this.usuario.tipo_conta == this.tipo_conta) {
+      this.auth.cadastrar(this.usuario).subscribe((resp: Usuario) => {
+        this.usuario = resp;
         alert('Conta Atualizada com sucesso')
         this.router.navigate(['https://banco.bradesco/html/classic/index.shtm'])
       })
