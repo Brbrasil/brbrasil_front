@@ -26,22 +26,6 @@ export class CadastrarComponent implements OnInit {
       this.tipo_conta = event.target.value;
     }
   
-  // validarEmail(){
-  //   let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    
-    
-  //   if(this.usuario.usuario.match(regex)){
-  //     let email = (<HTMLDivElement>document.getElementById('validmail'))
-  //     console.log(this.usuario.usuario + ' acerto')
-  //     email.style.backgroundColor = "#26733a"
-  //     email.innerHTML = 'deu certo'
-  //   } else {
-  //     let email = (<HTMLDivElement>document.getElementById('validmail'))
-  //     email.style.color = "red"
-  //     email.innerHTML = 'deu ruim'
-  //     console.log(this.usuario.usuario + ' erro')
-  //   }
-  // }
 
   cadastrar(){
     this.usuario.tipo_conta = this.tipo_conta;
