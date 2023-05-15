@@ -5,7 +5,7 @@ export class Usuario {
   public nome: string
   public agencia: String
   public conta: String
-  public usuario: string;
+  public usuario: string
   public senha: string
   public senha_digitos: string
   public cpf: string
