@@ -9,7 +9,7 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./cadastrar.component.css'],
 })
 export class CadastrarComponent implements OnInit {
-  usuario: Usuario = new Usuario();
+  agencia: Usuario = new Usuario();
 
   tipo_conta: string;
 
