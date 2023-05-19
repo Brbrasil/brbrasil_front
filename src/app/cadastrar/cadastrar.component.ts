@@ -11,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 export class CadastrarComponent implements OnInit {
   usuario: Usuario = new Usuario();
 
-  tipo_conta: string;
+  telefone: string;
 
   constructor(
     private auth: AuthService,
@@ -21,16 +21,11 @@ export class CadastrarComponent implements OnInit {
     ngOnInit() {
       window.scroll(0, 0);
     }
-   
-    tipoUser(event: any) {
-      this.tipo_conta = event.target.value;
-    }
-  
 
   cadastrar(){
-    this.usuario.tipo_conta = this.tipo_conta;
+    this.usuario.telefone = this.telefone;
 
-    if(this.usuario.tipo_conta == this.tipo_conta) {
+    if(this.usuario.telefone == this.telefone) {
       this.auth.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp;
         alert('Conta Atualizada com sucesso')

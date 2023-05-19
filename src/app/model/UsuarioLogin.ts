@@ -9,5 +9,4 @@ export class UsuarioLogin {
   public senha_digitos: string;
   public cpf: string;
   public telefone: String;
-  public tipo_conta: String;
 }
