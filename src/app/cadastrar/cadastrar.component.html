@@ -46,6 +46,15 @@
             <input [(ngModel)]='usuario.telefone' class="form-control" type="text" name="telefone" id="telefone"
               placeholder="(11)99999-9999" />
           </div>
+
+          <div class="form-group">
+            <label for="tipo_conta">Conta:</label>
+            <select class="form-control" name="tipo_conta" id="tipo_conta" (change)='tipoUser($event)'>
+              <option value="corrente">Bradesco</option>
+            </select>
+          </div>
+
+         
          
           <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-cadastrar ml-2" (click)='cadastrar()'>Atualizar</button>
