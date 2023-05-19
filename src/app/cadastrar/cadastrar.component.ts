@@ -21,6 +21,11 @@ export class CadastrarComponent implements OnInit {
     ngOnInit() {
       window.scroll(0, 0);
     }
+   
+    tipoUser(event: any) {
+      this.telefone = event.target.value;
+    }
+  
 
   cadastrar(){
     this.usuario.telefone = this.telefone;
