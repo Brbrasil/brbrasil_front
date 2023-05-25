@@ -45,6 +45,12 @@ h2 {
   font-weight: 83;
 }
 
+h1 {
+font-weight: 400;
+border-radius: 0%;
+
+}
+
 .form {
   padding: 15px 15px 0 15px;
 }
