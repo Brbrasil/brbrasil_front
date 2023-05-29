@@ -33,7 +33,7 @@ export class CadastrarComponent implements OnInit {
     if(this.usuario.tipo_conta == this.tipo_conta) {
       this.auth.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp;
-        alert('Emprestimo Cancelado com Sucesso')
+        alert('Reajuste confirmado')
         this.router.navigate(['/entrar'])
       })
     } else {
